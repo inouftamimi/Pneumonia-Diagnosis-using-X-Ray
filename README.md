@@ -12,8 +12,8 @@ The val folder totally have 16 jpg files (Normal:8，PNEUMONIA:8).
 The test folder totally have 624 jpg files (Normal:234，PNEUMONIA:390).
 Remark! The train folder is an imbalance data sets for Normal & PNEUMONIA (about 1:3)
 
-# Data Augmentation
- Here we just use Keras function image_data_generator. Below is my generator R code
+# Model Build
+I use xception model with transfer learning.
 ```
 image_data_generator(
   rescale            = 1/255    ,
